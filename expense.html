@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="expense.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>EXPENSE TRACKER</h2>
+      <div class="your-balance">
+        <h3>YOUR BALANCE</h3>
+        <h1 id="balance">0</h1>
+      </div>
+
+      <div class="income-expense">
+        <div class="income">
+          <p>INCOME</p>
+          <p class="green">0</p>
+        </div>
+        <div class="expense">
+          <p>EXPENSE</p>
+          <p class="red">0</p>
+        </div>
+      </div>
+
+      <div class="history">
+        <h3>HISTORY</h3>
+        <ul class="history-list"></ul>
+      </div>
+
+      <div class="add-new-transaction">
+        <h3>ADD NEW TRANSACTION</h3>
+        <input type="text" id="item-name" placeholder="Item Name" />
+        <h3>AMOUNT</h3>
+        <p>(-ve:expense, +ve:income)</p>
+        <input type="text" id="item-amount" placeholder="Enter amount" />
+        <button id="add-btn">Add Transaction</button>
+      </div>
+    </div>
+
+    <script src="expense.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
